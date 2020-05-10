@@ -1,7 +1,9 @@
 $(document).ready(function(){
-    animateDiv(".blue_rectangle");
-    animateDiv(".seagreen_rectangle");
-    animateDiv(".salmon_rectangle")
+    animateDiv(".blue_square");
+    animateDiv(".seagreen_square");
+    animateDiv(".salmon_square");
+    animateDiv(".turquoise_square");
+    animateDiv(".blueviolet_square");
 
     animateDiv(".red_circle");
     animateDiv(".coral_circle");
@@ -12,17 +14,18 @@ $(document).ready(function(){
     animateDiv(".orange_triangle");
     animateDiv(".green_triangle");
     animateDiv(".yellow_triangle");
+    animateDiv(".crimson_triangle");
 
     animateDiv(".green_rectangle");
     animateDiv(".burlywood_rectangle");
     animateDiv(".purple_rectangle");
+    animateDiv(".deeppink_rectangle");
 });
 
 function makeNewPosition(){
     
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - 60;
-    var w = $(window).width() - 60;
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
     
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
@@ -33,7 +36,7 @@ function makeNewPosition(){
 
 function animateDiv(myclass){
     var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 1500,   function(){
+    $(myclass).animate({top: newq[0], left: newq[1]}, 2000,   function(){
       animateDiv(myclass);        
     });
     

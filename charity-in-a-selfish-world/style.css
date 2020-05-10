@@ -22,30 +22,42 @@
     color: #000000;
 }
 
-
-.blue_rectangle {
+.blue_square{
     width: 50px;
     height: 50px;
     background-color:lightblue;
     position:fixed;  
 }
 
-.seagreen_rectangle {
+.seagreen_square{
   width: 50px;
   height: 50px;
   background-color:lightseagreen;
   position:fixed;  
 }
 
-.salmon_rectangle{
+.salmon_square{
   width: 50px;
   height: 50px;
   background-color:salmon;
   position:fixed;  
 }
 
+.turquoise_square{
+  width: 50px;
+  height: 50px;
+  background-color: turquoise;
+  position:fixed;
+}
 
-.red_circle {
+.blueviolet_square{
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  position:fixed;
+}
+
+.red_circle{
     width: 50px;
     height: 50px;
     background-color:red;
@@ -53,7 +65,7 @@
     position:fixed;
 }
 
-.pink_circle {
+.pink_circle{
   width: 50px;
   height: 50px;
   background-color:pink;
@@ -69,7 +81,7 @@
   position:fixed;  
 }
 
-.grey_circle {
+.grey_circle{
   width: 50px;
   height: 50px;
   background-color:grey;
@@ -85,7 +97,7 @@
   position:fixed;  
 }
 
-.orange_triangle {
+.orange_triangle{
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
@@ -94,7 +106,7 @@
     position: fixed;  
 }
 
-.green_triangle {
+.green_triangle{
   width: 0;
   height: 0;
   border-left: 25px solid transparent;
@@ -112,14 +124,23 @@
   position: fixed;  
 }
 
-.green_rectangle {
+.crimson_triangle{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid crimson;
+  position: fixed;  
+}
+
+.green_rectangle{
   width: 70px;
   height: 35px;
   background-color: green;
   position: fixed;  
 }
 
-.burlywood_rectangle {
+.burlywood_rectangle{
   width: 70px;
   height: 35px;
   background-color: burlywood;
@@ -130,6 +151,13 @@
   width: 70px;
   height: 35px;
   background-color: purple;
+  position: fixed;  
+}
+
+.deeppink_rectangle{
+  width: 70px;
+  height: 35px;
+  background-color: deeppink;
   position: fixed;  
 }
 
