@@ -1,12 +1,8 @@
 .title {
-    font-family: IBM Plex Serif;
-    font-style: normal;
-    font-weight: bold;
+    font-family: 'Barrio', cursive;
     font-size: 70px;
-
-    line-height: 91px;
-    text-align: center;
-    
+    line-height: 90px;
+    text-align: center;    
     color: #000000;
 }
 
@@ -15,149 +11,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-
     line-height: 30px;
     text-align: center;
-
     color: #000000;
 }
-
-.blue_square{
-    width: 50px;
-    height: 50px;
-    background-color:lightblue;
-    position:fixed;  
-}
-
-.seagreen_square{
-  width: 50px;
-  height: 50px;
-  background-color:lightseagreen;
-  position:fixed;  
-}
-
-.salmon_square{
-  width: 50px;
-  height: 50px;
-  background-color:salmon;
-  position:fixed;  
-}
-
-.turquoise_square{
-  width: 50px;
-  height: 50px;
-  background-color: turquoise;
-  position:fixed;
-}
-
-.blueviolet_square{
-  width: 50px;
-  height: 50px;
-  background-color: blueviolet;
-  position:fixed;
-}
-
-.red_circle{
-    width: 50px;
-    height: 50px;
-    background-color:red;
-    border-radius: 50%;
-    position:fixed;
-}
-
-.pink_circle{
-  width: 50px;
-  height: 50px;
-  background-color:pink;
-  border-radius: 50%;
-  position:fixed;   
-}
-
-.coral_circle{
-  width: 50px;
-  height: 50px;
-  background-color:coral;
-  border-radius: 50%;
-  position:fixed;  
-}
-
-.grey_circle{
-  width: 50px;
-  height: 50px;
-  background-color:grey;
-  border-radius: 50%;
-  position:fixed;   
-}
-
-.lightblue_circle{
-  width: 50px;
-  height: 50px;
-  background-color:lightblue;
-  border-radius: 50%;
-  position:fixed;  
-}
-
-.orange_triangle{
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid orange;
-    position: fixed;  
-}
-
-.green_triangle{
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 50px solid lightgreen;
-  position: fixed;  
-}
-
-.yellow_triangle{
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 50px solid yellowgreen;
-  position: fixed;  
-}
-
-.crimson_triangle{
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 50px solid crimson;
-  position: fixed;  
-}
-
-.green_rectangle{
-  width: 70px;
-  height: 35px;
-  background-color: green;
-  position: fixed;  
-}
-
-.burlywood_rectangle{
-  width: 70px;
-  height: 35px;
-  background-color: burlywood;
-  position: fixed;  
-}
-
-.purple_rectangle{
-  width: 70px;
-  height: 35px;
-  background-color: purple;
-  position: fixed;  
-}
-
-.deeppink_rectangle{
-  width: 70px;
-  height: 35px;
-  background-color: deeppink;
-  position: fixed;  
-}
-
