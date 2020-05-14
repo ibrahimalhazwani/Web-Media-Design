@@ -1,5 +1,6 @@
 .title {
-    font-family: 'Barrio', cursive;
+    /* font-family: 'Ultra', serif; */
+    font-family:'Barrio', cursive;
     font-size: 70px;
     line-height: 90px;
     text-align: center;    
@@ -7,11 +8,28 @@
 }
 
 .sub-title{
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Inter', sans-serif;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
     color: #000000;
+}
+
+.div-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.text{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.date{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-style: italic;
 }
