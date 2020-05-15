@@ -1,3 +1,151 @@
+#canvas{
+    width: 100vw;
+    height: 100hw;
+    position: fixed;
+    top:0;
+    height: 0;
+    z-index: -1;
+}
+
+.blue_square{
+    width: 50px;
+    height: 50px;
+    background-color:lightblue;
+    position:absolute;  
+}
+
+.seagreen_square{
+  width: 50px;
+  height: 50px;
+  background-color:lightseagreen;
+  position: absolute;;  
+}
+
+.salmon_square{
+  width: 50px;
+  height: 50px;
+  background-color:salmon;
+  position: absolute;;  
+}
+
+.turquoise_square{
+  width: 50px;
+  height: 50px;
+  background-color: turquoise;
+  position: absolute;;
+}
+
+.blueviolet_square{
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  position: absolute;;
+}
+
+.red_circle{
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    border-radius: 50%;
+    position: absolute;;
+}
+
+.pink_circle{
+  width: 50px;
+  height: 50px;
+  background-color:pink;
+  border-radius: 50%;
+  position: absolute;;   
+}
+
+.coral_circle{
+  width: 50px;
+  height: 50px;
+  background-color:coral;
+  border-radius: 50%;
+  position: absolute;;  
+}
+
+.grey_circle{
+  width: 50px;
+  height: 50px;
+  background-color:grey;
+  border-radius: 50%;
+  position: absolute;;   
+}
+
+.lightblue_circle{
+  width: 50px;
+  height: 50px;
+  background-color:lightblue;
+  border-radius: 50%;
+  position: absolute;;  
+}
+
+.orange_triangle{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid orange;
+    position: absolute;  
+}
+
+.green_triangle{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid lightgreen;
+  position: absolute;  
+}
+
+.yellow_triangle{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid yellowgreen;
+  position: absolute;  
+}
+
+.crimson_triangle{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid crimson;
+  position: absolute;  
+}
+
+.green_rectangle{
+  width: 70px;
+  height: 35px;
+  background-color: green;
+  position: absolute;  
+}
+
+.burlywood_rectangle{
+  width: 70px;
+  height: 35px;
+  background-color: burlywood;
+  position: absolute;  
+}
+
+.purple_rectangle{
+  width: 70px;
+  height: 35px;
+  background-color: purple;
+  position: absolute;  
+}
+
+.deepink_rectangle{
+  width: 70px;
+  height: 35px;
+  background-color: deeppink;
+  position: absolute;  
+}
+
 .title {
     /* font-family: 'Ultra', serif; */
     font-family:'Barrio', cursive;
@@ -15,10 +163,18 @@
     color: #000000;
 }
 
+.course-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
 .div-title{
     font-family: 'Inter', sans-serif;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 50px;
     color: #000000;
 }
 
