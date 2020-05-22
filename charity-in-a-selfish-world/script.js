@@ -40,3 +40,11 @@ function animateDiv(myclass){
       animateDiv(myclass);        
     });
 }; 
+
+function handleTickInit(tick) {
+
+    // simulate value updates for demo purposes
+    Tick.helper.interval(function(){
+        tick.value += 7 + Math.ceil(Math.random() * 3);
+    }, 3000);
+}
