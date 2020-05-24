@@ -580,7 +580,15 @@ pre code {
 }
 
 .container-fluid-landing-page {
-  width: 100%;
+  width: 100vw;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid-panaro {
+  width: 100vw;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -588,7 +596,7 @@ pre code {
 }
 
 .container-fluid {
-  width: 100%;
+  width: 100vw;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -7334,7 +7342,14 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: -3;
+}
+
+.fixed-left {
+  position: fixed;
+  top: 0;
+  left: 22px;
+  z-index: -3;
 }
 
 .fixed-bottom {
