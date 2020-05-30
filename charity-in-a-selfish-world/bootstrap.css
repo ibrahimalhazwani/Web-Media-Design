@@ -675,6 +675,12 @@ pre code {
   max-width: 33.333333%;
 }
 
+.col-4-images {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
 .col-5 {
   -ms-flex: 0 0 41.666667%;
   flex: 0 0 41.666667%;
