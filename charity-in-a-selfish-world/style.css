@@ -18,7 +18,6 @@ img.sticky {
 }
 
 .title {
-  /* font-family: 'Ultra', serif; */
   font-family:'Barrio', cursive;
   font-size: 75px;
   line-height: 90px;
@@ -55,6 +54,18 @@ img.sticky {
   font-style: normal;
 }
 
+.caption-dataviz{
+  font-family: 'Lora', serif;
+  font-size: 10x;
+  font-style: normal;
+  color: #808080;
+}
+
+.quotes{
+  font-family: 'Barrio', cursive;
+  font-size: 57px;
+}
+
 .date{
   font-family: 'Lora', serif;
   font-size: 15px;
@@ -62,8 +73,9 @@ img.sticky {
 }
 
 .number{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
+  text-align: center;
 }
 
 .sub-title-number{

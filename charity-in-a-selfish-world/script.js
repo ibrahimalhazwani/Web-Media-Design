@@ -28,7 +28,8 @@ $(document).ready(function(){
        "./images/panaro-cut-two.png",
        "./images/panaro-cut-three.png",
        "./images/panaro-empty.png",
-       "./images/panaro-fallen.png"
+       "./images/rope-charity-one.png",
+       "./images/rope-charity-one.png"
     ];
 
     // TweenMax can tween any property of any object. We use this object to cycle through the array
@@ -52,7 +53,7 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: ".div-title-trigger", duration: 3000})
+    var scene = new ScrollMagic.Scene({triggerElement: ".div-title-trigger", duration: 4000})
                     .setTween(tween)
                     .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
@@ -80,4 +81,4 @@ function animateDiv(myclass){
     $(myclass).animate({top: newq[0], left: newq[1]}, 2000,   function(){
       animateDiv(myclass);        
     });
-}; 
+};
