@@ -10,16 +10,19 @@ $(document).ready(function(){
     animateDiv(".pink_circle");
     animateDiv(".grey_circle");
     animateDiv(".lightblue_circle");
+    animateDiv(".coolors1_circle")
 
     animateDiv(".orange_triangle");
     animateDiv(".green_triangle");
     animateDiv(".yellow_triangle");
-    animateDiv(".crimson_triangle");
+    animateDiv(".crimson_triangle"); 
+    animateDiv(".coolors1_triangle");
 
     animateDiv(".green_rectangle");
     animateDiv(".burlywood_rectangle");
     animateDiv(".purple_rectangle");
     animateDiv(".deepink_rectangle");
+    animateDiv(".coolors1_rectangle");
 
     // define images
     var images = [

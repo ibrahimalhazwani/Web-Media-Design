@@ -63,13 +63,14 @@ img.sticky {
 
 .quotes{
   font-family: 'Barrio', cursive;
-  font-size: 57px;
+  font-size: 35px;
 }
 
 .date{
   font-family: 'Lora', serif;
   font-size: 15px;
   font-style: italic;
+  font-weight: bold;
 }
 
 .number{
@@ -96,6 +97,12 @@ img.sticky {
   font-size: 10px;
 }
 
+.data-viz-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .panaro {
   object-fit: cover;
   height: 100%;
@@ -106,16 +113,28 @@ img.sticky {
   visibility: hidden;
 }
 
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 15px;
+}
+
+.fix{
+  position:fixed;
+  bottom:0px;
+  left:50%;
+}
 .intro__trigger {
   position: absolute;
   top: 50vh;
 }
 
+/* shapes */
+
 .blue_square{
-    width: 50px;
-    height: 50px;
-    background-color:lightblue;
-    position:absolute;  
+  width: 50px;
+  height: 50px;
+  background-color:lightblue;
+  position:absolute;  
 }
 
 .seagreen_square{
@@ -147,11 +166,11 @@ img.sticky {
 }
 
 .red_circle{
-    width: 50px;
-    height: 50px;
-    background-color:red;
-    border-radius: 50%;
-    position: absolute;;
+  width: 50px;
+  height: 50px;
+  background-color:red;
+  border-radius: 50%;
+  position: absolute;;
 }
 
 .pink_circle{
@@ -186,13 +205,21 @@ img.sticky {
   position: absolute;;  
 }
 
+.coolors1_circle{
+  width: 50px;
+  height: 50px;
+  background-color: #d8e2dc;
+  border-radius: 50%;
+  position: absolute;;  
+}
+
 .orange_triangle{
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid orange;
-    position: absolute;  
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid orange;
+  position: absolute;  
 }
 
 .green_triangle{
@@ -222,6 +249,16 @@ img.sticky {
   position: absolute;  
 }
 
+.coolors1_triangle{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #b8f2e6;
+  position: absolute;  
+}
+
+
 .green_rectangle{
   width: 70px;
   height: 35px;
@@ -247,5 +284,12 @@ img.sticky {
   width: 70px;
   height: 35px;
   background-color: deeppink;
+  position: absolute;  
+}
+
+.coolors1_rectangle{
+  width: 70px;
+  height: 35px;
+  background-color: #ee6c4d;
   position: absolute;  
 }
