@@ -40,10 +40,8 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
-        
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         
         <!-- Bootstrap -->
@@ -89,7 +87,7 @@
             <div class="row">
 
                 <div class="col-sm">
-                    <img class="mx-auto d-block img-fluid" src="./images/rope-landing-page.png" alt="rope" style="height: 100vh;">
+                    <img class="mx-auto d-block img-fluid" src="./images/rope-landing-def2.png" alt="rope" style="height: 100vh;">
                 </div>
 
                 <div class="col-4">
@@ -102,8 +100,6 @@
                     <h3 class="text-xl-center number"> € 756,94 mld </h3>
                     <div class="p-1"></div>
                     <p class="text-body text-center sub-title-number">Total money raised in Italy by foundraising during the COVID-19*</p>
-                    <!-- <div class="p-4"></div>
-                    <p class="text-center course-text">Project for the course in "Web and media design" - Summer semester 2020 - Ibrahim Al Hazwani</p> -->
                 </div>
 
                 <div class="col-sm">
@@ -121,10 +117,9 @@
             <div class="row">
                  
                 <div class="col-4-images">
-                    <img class="mx-auto d-block img-fluid sticky" src="./images/panaro-start-final.png" alt="rope with a basket containing some colorful shape" id = "myimg">
+                    <img class="mx-auto d-block img-fluid sticky" src="./images/panaro-start-final.png" alt="rope with a basket containing some colorful gems" id = "myimg">
                 </div>
 
-              
                 <div class="col-8">
 
                     <div class="row"> 
@@ -167,9 +162,8 @@
                         <div class="col-2">
                             <!-- Here the date should be shown when I have it -->
                         </div>
+                    
                     </div>
-
-                    <!-- <div class="p-2"></div> -->
 
                     <div class="row">
                     
@@ -201,7 +195,7 @@
                     <div class="row">
 
                         <div class="col-6">
-                            <p class="text-bod text">The 2015 Stability Law asks the Regions for a contribution to public finance of € 4 billion.  </p>
+                            <p class="text-bod text">The 2015 Stability Law asks the Regions for a contribution to public finance of € 4 billion.</p>
                         </div>
 
                         <div class="col-2">
@@ -348,7 +342,7 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="p-lg-5"></div>
-                            <h1 class="div-title">COVID-19</h1>
+                            <h1 class="div-title-trigger-2">COVID-19</h1>
                             <h3>The situation in Italy</h3>
                             <div class="p-3"></div>
                             <p class="text-body text">The ongoing COVID-19 pandemic was first confirmed to have spread to Italy on 31 January 2020, when two Chinese tourists in 
@@ -361,71 +355,16 @@
 
                         <div class="col-2">
                             <!-- Empty -->
-
                         </div>
                     </div>
 
                     <div class="row">
+
                         <div class="col-6">
-                            <div style="text-align:center;">
-                                <!-- Add a svg area, empty -->
-                                <svg id="viz_area_one" align="center" height=200 width=450></svg>      
-        
-                                <script>
-                                    // Select the svg area
-                                    var svg = d3.select("#viz_area_one")
-            
-                                    // Create a scale: transform value in pixel
-                                    var x = d3.scaleLinear()
-                                        .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
-                                        .range([0, 400]);       // This is the corresponding value I want in Pixel
-                                    // Try console.log( x(25) ) to see what this x function does.
-            
-                                    // Add 3 dots for 0, 50 and 100%
-                                    svg.append("circle")
-                                        .attr("cx", x(10)).attr("cy", 100).attr("r", 40).style("fill", "blue");
-                                    svg.append("circle")
-                                        .attr("cx", x(50)).attr("cy", 100).attr("r", 40).style("fill", "red");
-                                    svg.append("circle")
-                                        .attr("cx", x(100)).attr("cy", 100).attr("r", 40).style("fill", "green")  
-                                </script>
-                            </div>
                             <div class="p-2"></div>
-
-                            <p class="text-body text">Lorem ipsum dolor sit amet, cu his diam docendi sententiae, noster denique fierent eum ea. Te est esse noster prompta, vim laudem verear noluisse in. 
-                                Pro no quas falli possim, erant latine senserit eum ei. Possim oportere usu ad, sit ei putant labores dolorum, mei nonumes quaestio in. Vix ut periculis posidonium.
-                            </p>
-                        </div>
-
-                        <div class="col-2">
-                            <p class="pl-3"> total number of active cases </p>    
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <div style="text-align:center;">
-                                <!-- Add a svg area, empty -->
-                                <svg id="viz_area_two" align="center" height=200 width=450></svg>      
-        
-                                <script>
-                                    // Select the svg area
-                                    var svg = d3.select("#viz_area_two")
-            
-                                    // Create a scale: transform value in pixel
-                                    var x = d3.scaleLinear()
-                                        .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
-                                        .range([0, 400]);       // This is the corresponding value I want in Pixel
-                                    // Try console.log( x(25) ) to see what this x function does.
-            
-                                    // Add 3 dots for 0, 50 and 100%
-                                    svg.append("circle")
-                                        .attr("cx", x(10)).attr("cy", 100).attr("r", 40).style("fill", "blue");
-                                    svg.append("circle")
-                                        .attr("cx", x(50)).attr("cy", 100).attr("r", 40).style("fill", "red");
-                                    svg.append("circle")
-                                        .attr("cx", x(100)).attr("cy", 100).attr("r", 40).style("fill", "green")  
-                                </script>
+                            <div>
+                                <p class="text-body data-viz-title">Number of active cases in Italy</p>
+                                <img class="mx-auto d-block img-fluid" src="./data-viz/active-cases.png" alt="lineplot about active cases of COVID-19">
                             </div>
 
                             <div class="p-2"></div>
@@ -434,37 +373,11 @@
                                 Pro no quas falli possim, erant latine senserit eum ei. Possim oportere usu ad, sit ei putant labores dolorum, mei nonumes quaestio in. Vix ut periculis posidonium.
                             </p>
 
-                        </div>
+                            <div class="p-2"></div>
 
-                        <div class="col-2">
-                            <p class="pl-3"> total number of recovered cases </p>  
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <div style="text-align:center;">
-                                <!-- Add a svg area, empty -->
-                                <svg id="viz_area_three" align="center" height=200 width=450></svg>      
-        
-                                <script>
-                                    // Select the svg area
-                                    var svg = d3.select("#viz_area_three")
-            
-                                    // Create a scale: transform value in pixel
-                                    var x = d3.scaleLinear()
-                                        .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
-                                        .range([0, 400]);       // This is the corresponding value I want in Pixel
-                                    // Try console.log( x(25) ) to see what this x function does.
-            
-                                    // Add 3 dots for 0, 50 and 100%
-                                    svg.append("circle")
-                                        .attr("cx", x(10)).attr("cy", 100).attr("r", 40).style("fill", "blue");
-                                    svg.append("circle")
-                                        .attr("cx", x(50)).attr("cy", 100).attr("r", 40).style("fill", "red");
-                                    svg.append("circle")
-                                        .attr("cx", x(100)).attr("cy", 100).attr("r", 40).style("fill", "green")  
-                                </script>
+                            <div>
+                                <p class="text-body data-viz-title">Number of recovered cases in Italy</p>
+                                <img class="mx-auto d-block img-fluid" src="./data-viz/recovered-cases.png" alt="lineplot about recovered cases of COVID-19">
                             </div>
 
                             <div class="p-2"></div>
@@ -473,11 +386,23 @@
                                 Pro no quas falli possim, erant latine senserit eum ei. Possim oportere usu ad, sit ei putant labores dolorum, mei nonumes quaestio in. Vix ut periculis posidonium.
                             </p>
 
+                            <div class="p-2"></div>
+
+                            <div>
+                                <p class="text-body data-viz-title">Number of fatal cases in Italy</p>
+                                <img class="mx-auto d-block img-fluid" src="./data-viz/deadth-cases.png" height=400 width=550 alt="lineplot about deaths cases of COVID-19">
+                            </div>
+
+                            <div class="p-2"></div>
+
+                            <p class="text-body text">Lorem ipsum dolor sit amet, cu his diam docendi sententiae, noster denique fierent eum ea. Te est esse noster prompta, vim laudem verear noluisse in. 
+                                Pro no quas falli possim, erant latine senserit eum ei. Possim oportere usu ad, sit ei putant labores dolorum, mei nonumes quaestio in. Vix ut periculis posidonium.
+                            </p>
                         </div>
 
                         <div class="col-2">
-                            <p class="pl-3"> total number of fatal cases</p>     
                         </div>
+
                     </div>
 
                 </div>
@@ -488,14 +413,6 @@
         
         <div class="row">
             <div class="col-sm">
-                <!-- <img class="mx-auto d-block img-fluid" src="./images/rope-charity-end.png" alt="broken rope"> -->
-                <!-- <img class="mx-auto d-block img-fluid" src="./images/hand-zero.png" alt="first hand">
-                <img class="mx-auto d-block img-fluid" src="./images/hand-one.png" alt="first hand">
-                <img class="mx-auto d-block img-fluid" src="./images/hand-two.png" alt="second hand">
-                <img class="mx-auto d-block img-fluid" src="./images/hand-three.png" alt="three hand">
-                <img class="mx-auto d-block img-fluid" src="./images/hand-four.png" alt="four hand">
-                <img class="mx-auto d-block img-fluid" src="./images/hand-five.png" alt="five hand">
-                <img class="mx-auto d-black img-fluid" src="./images/end-hand.png" alt="basket hand"> -->
                 <img class="mx-auto d-black img-fluid" src="./images/hand-final.png" alt="hand with a basket in the end">
             </div>
 
@@ -514,7 +431,6 @@
                 <p class="text-body text">In Italy has been activated <b>956 charity initiative</b> of which 714 from private company and association and 235 from private or no profit company.</p>
                 
                 <div class="p-3"></div>
-
 
                 <p class="text-body data-viz-title">Number of initiatives per beneficiary</p>
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460">

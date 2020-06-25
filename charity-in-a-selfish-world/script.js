@@ -26,13 +26,23 @@ $(document).ready(function(){
 
     // define images
     var images = [
-       "./images/panaro-start-final.png",
-       "./images/panaro-cut-one.png",
-       "./images/panaro-cut-two.png",
-       "./images/panaro-cut-three.png",
-       "./images/panaro-empty.png",
-       "./images/rope-charity-one.png",
-       "./images/rope-charity-one.png"
+        "./images/panaro-start-final.png",
+        "./images/panaro-cut-one.png",
+        "./images/panaro-cut-two.png",
+        "./images/panaro-cut-three.png",
+        "./images/panaro-empty.png"
+    ];
+
+    var images2 = [
+        "./images/panaro-corda-sottile-1.png",
+        "./images/panaro-corda-sottile-2.png",
+        "./images/panaro-corda-rotta-1.png",
+        "./images/panaro-corda-rotta-2.png",
+        "./images/panaro-corda-rotta-3.png",
+        "./images/panaro-corda-rotta-4.png",
+        "./images/panaro-rotto-corda.png",
+        "./images/panaro-rotto-corda-5.png",
+        "./images/panaro-rotto-corda-6.png"
     ];
 
     // TweenMax can tween any property of any object. We use this object to cycle through the array
@@ -56,7 +66,7 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: ".div-title-trigger", duration: 4000})
+    var scene = new ScrollMagic.Scene({triggerElement: ".div-title-trigger", duration: 2000})
                     .setTween(tween)
                     .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
@@ -65,6 +75,40 @@ $(document).ready(function(){
     $("form.move input[name=duration]:radio").change(function () {
         scene.duration($(this).val());
     });
+
+    // TweenMax can tween any property of any object. We use this object to cycle through the array
+    var obj2 = {curImg: 0};
+
+    // create tween
+    var tween2 = TweenMax.to(obj2, 0.5,
+        {
+            curImg: images2.length - 1,	        // animate propery curImg to number of images
+            roundProps: "curImg",				// only integers so it can be used as an array index
+            immediateRender: true,			    // load first image automatically
+            ease: Linear.easeNone,			    // show every image the same ammount of time
+            onUpdate: function () {
+                console.log(images2[obj2.curImg])
+                $("#myimg").attr("src", images2[obj2.curImg]); // set the image source
+            }
+        }
+    );
+
+    // init controller
+    var controller2 = new ScrollMagic.Controller();
+
+    // build scene
+    var scene2 = new ScrollMagic.Scene({triggerElement: ".div-title-trigger-2", duration: 1200})
+                    .setTween(tween2)
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller2);
+
+    // handle form change
+    $("form.move input[name=duration]:radio").change(function () {
+        scene2.duration($(this).val());
+    });
+
+
+
 });
 
 function makeNewPosition(){
