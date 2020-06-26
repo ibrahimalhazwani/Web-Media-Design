@@ -93,14 +93,11 @@ $(document).ready(function(){
         }
     );
 
-    // init controller
-    var controller2 = new ScrollMagic.Controller();
-
     // build scene
     var scene2 = new ScrollMagic.Scene({triggerElement: ".div-title-trigger-2", duration: 1200})
                     .setTween(tween2)
                     .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller2);
+                    .addTo(controller);
 
     // handle form change
     $("form.move input[name=duration]:radio").change(function () {
