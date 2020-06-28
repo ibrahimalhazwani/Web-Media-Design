@@ -96,8 +96,8 @@ $(document).ready(function(){
 
 function makeNewPosition(){
     
-    var h = $(window).height() - 100;
-    var w = $(window).width() - 100;
+    var h = $(window).height() - 10;
+    var w = $(window).width() - 10;
     
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
@@ -108,7 +108,7 @@ function makeNewPosition(){
 
 function animateDiv(myclass){
     var newq = makeNewPosition();
-    $(myclass).animate({top: newq[0], left: newq[1]}, 2000,   function(){
+    $(myclass).animate({top: newq[0], left: newq[1]}, 3000,   function(){
       animateDiv(myclass);        
     });
 };

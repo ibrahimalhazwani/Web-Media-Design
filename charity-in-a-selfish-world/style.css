@@ -1,5 +1,9 @@
-.inter {
-  font-family: Inter;
+body {
+  overflow-x: hidden;
+}
+
+.fjalla {
+  font-family: Fjalla One;
 }
 
 .lora {
@@ -14,31 +18,22 @@
   font-size: 0.8rem;
 }
 
-@media (min-width: 992px) {
-  html {
-    font-size: 1.25rem;
-  }
+.hero {
+  height: 100vh;
 }
 
-@media (max-width: 991px) {
-  .col-lg-9 {
-    padding-left: 0;
-  }
-}
-
-/*---*/
-
-body {
-  overflow-x: hidden;
-}
-
-#space-landing{
-  width: 100vw;
-  height: 100hw;
+.hero-text {
   position: absolute;
-  top:0;
-  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.polygon {
+  position: absolute;
   z-index: -1;
+  opacity: 0;
+  animation: 0.5s ease-in 2.5s forwards reveal;
 }
 
 img.sticky {
@@ -47,37 +42,32 @@ img.sticky {
   top: 0;
 }
 
-#landing{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.update{
-  width: 100vw;
-  height: 90hw;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-right: 10px;
-  z-index: -1;
-  font-size: 10px;
-}
-
 .carousel-caption {
   background: rgba(0, 0, 0, 0.35);
   font-size: 15px;
 }
 
-.fix{
-  position:fixed;
-  bottom:0px;
-  left:50%;
+@keyframes reveal {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
-.intro__trigger {
-  position: absolute;
-  top: 50vh;
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.25rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-text {
+    width: 75%;
+  }
+  .col-lg-9 {
+    padding-left: 0;
+  }
 }
 
 /* SHAPES */
@@ -85,64 +75,55 @@ img.sticky {
 .blue_square{
   width: 10px;
   height: 10px;
-  background-color:lightblue;
-  position:absolute;  
+  background-color:lightblue;  
 }
 
 .seagreen_square{
   width: 10px;
   height: 10px;
-  background-color:lightseagreen;
-  position: absolute;;  
+  background-color:lightseagreen;  
 }
 
 .salmon_square{
   width: 10px;
   height: 10px;
-  background-color:salmon;
-  position: absolute;;  
+  background-color:salmon;  
 }
 
 .turquoise_square{
   width: 10px;
   height: 10px;
   background-color: turquoise;
-  position: absolute;;
 }
 
 .blueviolet_square{
   width: 10px;
   height: 10px;
   background-color: blueviolet;
-  position: absolute;;
 }
 
 .extra_square_1{
   width: 10px;
   height: 10px;
-  background-color:#e76f51;
-  position:absolute;  
+  background-color:#e76f51;  
 }
 
 .extra_square_2{
   width: 10px;
   height: 10px;
-  background-color:#9bf6ff;
-  position:absolute;  
+  background-color:#9bf6ff;  
 }
 
 .extra_square_3{
   width: 10px;
   height: 10px;
-  background-color:#1d3557;
-  position:absolute;  
+  background-color:#1d3557;  
 }
 
 .extra_square_4{
   width: 10px;
   height: 10px;
-  background-color:#f77f00;
-  position:absolute;  
+  background-color:#f77f00;  
 }
 
 .red_circle{
@@ -150,84 +131,73 @@ img.sticky {
   height: 10px;
   background-color:red;
   border-radius: 50%;
-  position: absolute;;
 }
 
 .pink_circle{
   width: 10px;
   height: 10px;
   background-color:pink;
-  border-radius: 50%;
-  position: absolute;;   
+  border-radius: 50%;   
 }
 
 .coral_circle{
   width: 10px;
   height: 10px;
   background-color:coral;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 
 .grey_circle{
   width: 10px;
   height: 10px;
   background-color:grey;
-  border-radius: 50%;
-  position: absolute;;   
+  border-radius: 50%;   
 }
 
 .lightblue_circle{
   width: 10px;
   height: 10px;
   background-color:lightblue;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 
 .coolors1_circle{
   width: 10px;
   height: 10px;
   background-color: #d8e2dc;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 
 .coolors2_circle{
   width: 10px;
   height: 10px;
   background-color:#9bf6ff;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 
 .coolors3_circle{
   width: 10px;
   height: 10px;
   background-color:#9d8189;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 .coolors4_circle{
   width: 10px;
   height: 10px;
   background-color:#74c69d;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 .coolors5_circle{
   width: 10px;
   height: 10px;
   background-color:#fee440;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 .coolors6_circle{
   width: 10px;
   height: 10px;
   background-color:#ef476f;
-  border-radius: 50%;
-  position: absolute;;  
+  border-radius: 50%;  
 }
 
 .orange_triangle{
@@ -235,8 +205,7 @@ img.sticky {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid orange;
-  position: absolute;  
+  border-bottom: 10px solid orange;  
 }
 
 .green_triangle{
@@ -244,8 +213,7 @@ img.sticky {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid lightgreen;
-  position: absolute;  
+  border-bottom: 10px solid lightgreen;  
 }
 
 .yellow_triangle{
@@ -253,8 +221,7 @@ img.sticky {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid yellowgreen;
-  position: absolute;  
+  border-top: 10px solid yellowgreen;  
 }
 
 .crimson_triangle{
@@ -262,8 +229,7 @@ img.sticky {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid crimson;
-  position: absolute;  
+  border-top: 10px solid crimson;  
 }
 
 .coolors1_triangle{
@@ -271,8 +237,7 @@ img.sticky {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #b8f2e6;
-  position: absolute;  
+  border-top: 10px solid #b8f2e6;  
 }
 
 .coolors1_triangle{
@@ -280,104 +245,89 @@ img.sticky {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #b8f2e6;
-  position: absolute;  
+  border-top: 10px solid #b8f2e6;  
 }
 .coolors2_triangle{
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #ed6a5a;
-  position: absolute;  
+  border-top: 10px solid #ed6a5a;  
 }
 .coolors1_triangle{
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #9d4edd;
-  position: absolute;  
+  border-top: 10px solid #9d4edd;  
 }
 .coolors1_triangle{
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #70d6ff;
-  position: absolute;  
+  border-top: 10px solid #70d6ff;  
 }
 .coolors1_triangle{
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #7bdff2;
-  position: absolute;  
+  border-top: 10px solid #7bdff2;  
 }
 
 .green_rectangle{
   width: 10px;
   height: 5px;
-  background-color: green;
-  position: absolute;  
+  background-color: green;  
 }
 
 .burlywood_rectangle{
   width: 10px;
   height: 5px;
-  background-color: burlywood;
-  position: absolute;  
+  background-color: burlywood;  
 }
 
 .purple_rectangle{
   width: 10px;
   height: 5px;
-  background-color: purple;
-  position: absolute;  
+  background-color: purple;  
 }
 
 .deepink_rectangle{
   width: 10px;
   height: 5px;
-  background-color: deeppink;
-  position: absolute;  
+  background-color: deeppink;  
 }
 
 .coolors1_rectangle{
   width: 10px;
   height: 5px;
-  background-color: #ee6c4d;
-  position: absolute;  
+  background-color: #ee6c4d;  
 }
 
 .coolors2_rectangle{
   width: 10px;
   height: 5px;
-  background-color: #fe938c;
-  position: absolute;  
+  background-color: #fe938c;  
 }
 .coolors3_rectangle{
   width: 10px;
   height: 5px;
-  background-color: #9bc1bc;
-  position: absolute;  
+  background-color: #9bc1bc;  
 }
 .coolors4_rectangle{
   width: 10px;
   height: 5px;
-  background-color: #ffd23f;
-  position: absolute;  
+  background-color: #ffd23f;  
 }
 .coolors5_rectangle{
   width: 10px;
   height: 5px;
-  background-color: #437f97;
-  position: absolute;  
+  background-color: #437f97;  
 }
 .coolors6_rectangle{
   width: 10px;
   height: 5px;
-  background-color: #f49f0a;
-  position: absolute;  
+  background-color: #f49f0a;  
 }
