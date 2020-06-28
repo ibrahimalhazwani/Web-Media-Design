@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 .fjalla {
   font-family: Fjalla One;
 }
